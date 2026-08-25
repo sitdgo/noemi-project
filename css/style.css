@@ -214,12 +214,13 @@ ul {
 
 /* Тренды (Trending) */
 .trending {
-    padding: 40px 0;
+    padding: 40px 15px;
 }
 
 .trending__grid {
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
 .trending-card {
@@ -629,7 +630,7 @@ ul {
     }
     
     .shop-card {
-        flex: 1 1 50%;
+        flex: 1 1 calc(50% - 15px);
     }
 }
 
@@ -682,7 +683,7 @@ ul {
         gap: 50px;
     }
     
-    .main {
+    .articles-column {
         flex: 2;
     }
     
@@ -705,7 +706,7 @@ ul {
         flex-wrap: wrap;
     }
     .trending-card {
-        flex: 1 1 50%;
+        flex: 1 1 calc(50% - 15px);
     }
 }
 
@@ -716,7 +717,7 @@ ul {
         flex-wrap: wrap;
     }
     .trending-card {
-        flex: 1 1 50%;
+        flex: 1 1 calc(50% - 15px);
     }
 }
 
@@ -726,7 +727,7 @@ ul {
         flex-wrap: wrap;
     }
     .trending-card {
-        flex: 1 1 25%;
+        flex: 1 1 calc(25% - 15px);
     }
 }
 
@@ -737,7 +738,7 @@ ul {
         flex-wrap: wrap;
     }
     .trending-card {
-        flex: 1 1 25%;
+        flex: 1 1 calc(25% - 15px);
     }
 }
 
