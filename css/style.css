@@ -701,72 +701,44 @@ ul {
 /* Mobile (<= 640px) */
 @media (max-width: 640px) and (orientation: landscape) {
     .trending__grid {
-    display: flex;
-    flex-direction: column;
-}
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     .trending-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    min-height: 320px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-decoration: none;
-}
+        flex: 1 1 50%;
+    }
 }
 
 /* Tablet (641px - 1199px) */
 @media (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
     .trending__grid {
-    display: flex;
-    flex-direction: column;
-}
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     .trending-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    min-height: 320px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-decoration: none;
-}
+        flex: 1 1 50%;
+    }
 }
 
 @media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
     .trending__grid {
-    display: flex;
-    flex-direction: column;
-}
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     .trending-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    min-height: 320px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-decoration: none;
-}
+        flex: 1 1 25%;
+    }
 }
 
 /* Desktop (>= 1200px) - always 4 columns */
 @media (min-width: 1200px) {
     .trending__grid {
-    display: flex;
-    flex-direction: column;
-}
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     .trending-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    min-height: 320px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-decoration: none;
-}
+        flex: 1 1 25%;
+    }
 }
 
 /* Адаптивность попапа по высоте (Landscape) */
