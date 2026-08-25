@@ -27,6 +27,7 @@
         </div>
     </header>
 
+    <main class="main-content">
     <section class="hero">
         <div class="hero__container">
             <h1 class="hero__title">БЛОГ О ТВОРЧЕСТВЕ, СПОРТЕ,<br>И ОБРАЗЕ ЖИЗНИ</h1>
@@ -37,32 +38,28 @@
         <div class="trending__container">
             <h2 class="section-title trending__title">СЕЙЧАС В ТРЕНДЕ</h2>
             <div class="trending__grid">
-                <article class="trending-card">
-                    <img src="images/trend1.jpg" alt="Сад" class="trending-card__img">
+                <article class="trending-card" style="background-image: url('images/trend1.jpg');">
                     <div class="trending-card__content">
-                        <div class="trending-card__tags">LIFESTYLE / INTERIOR</div>
-                        <h3 class="trending-card__title">СЕЙЧАС В ТРЕНДЕ: САД НА ПОДОКОННИКЕ</h3>
+                        <ul class="tags"><li class="tags__item"><a href="#" class="tags__link">Lifestyle</a></li><li class="tags__item"><a href="#" class="tags__link">Interior</a></li></ul>
+                        <h3 class="trending-card__title"><a href="#">Сейчас в тренде: сад на подоконнике</a></h3>
                     </div>
                 </article>
-                <article class="trending-card">
-                    <img src="images/trend2.jpg" alt="Сыры" class="trending-card__img">
+                <article class="trending-card" style="background-image: url('images/trend2.jpg');">
                     <div class="trending-card__content">
-                        <div class="trending-card__tags">FOOD</div>
-                        <h3 class="trending-card__title">СЫРЫ НА КРАСИВЫХ КАРТИНКАХ ИЗ ИНТЕРНЕТА: КАКИЕ ОНИ НА ВКУС?</h3>
+                        <ul class="tags"><li class="tags__item"><a href="#" class="tags__link">Food</a></li></ul>
+                        <h3 class="trending-card__title"><a href="#">Сыры на красивых картинках из интернета: какие они на вкус?</a></h3>
                     </div>
                 </article>
-                <article class="trending-card">
-                    <img src="images/trend3.jpg" alt="Поход" class="trending-card__img">
+                <article class="trending-card" style="background-image: url('images/trend3.jpg');">
                     <div class="trending-card__content">
-                        <div class="trending-card__tags">LIFESTYLE / TRAVEL</div>
-                        <h3 class="trending-card__title">СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ</h3>
+                        <ul class="tags"><li class="tags__item"><a href="#" class="tags__link">Lifestyle</a></li><li class="tags__item"><a href="#" class="tags__link">Travel</a></li></ul>
+                        <h3 class="trending-card__title"><a href="#">Собираемся в первый поход в горы</a></h3>
                     </div>
                 </article>
-                <article class="trending-card">
-                    <img src="images/trend4.jpg" alt="Витамин" class="trending-card__img">
+                <article class="trending-card" style="background-image: url('images/trend4.jpg');">
                     <div class="trending-card__content">
-                        <div class="trending-card__tags">FOOD / HEALTH</div>
-                        <h3 class="trending-card__title">СЕЙЧАС В ТРЕНДЕ: СКОЛЬКО ВИТАМИНА С В ЛИМОНАХ?</h3>
+                        <ul class="tags"><li class="tags__item"><a href="#" class="tags__link">Food</a></li><li class="tags__item"><a href="#" class="tags__link">Health</a></li></ul>
+                        <h3 class="trending-card__title"><a href="#">Сейчас в тренде: сколько витамина с в лимонах?</a></h3>
                     </div>
                 </article>
             </div>
@@ -70,14 +67,14 @@
     </section>
 
     <div class="content-wrapper">
-        <main class="main">
+        <div class="articles-column">
             <div class="articles">
 
                 <article class="post">
                     <img src="images/last-post1.jpg" alt="Прогулка" class="post__img">
                     <div class="post__content">
                         <div class="post__meta">
-                            <span class="post__category">TRAVEL / HEALTH</span>
+                            <ul class="tags"><li class="tags__item"><a href="#" class="tags__link">Travel</a></li><li class="tags__item"><a href="#" class="tags__link">Health</a></li></ul>
                         </div>
                         <h2 class="post__title">10 МЕСТ, РАДИ КОТОРЫХ СТОИТ ПРОСНУТЬСЯ НА РАССВЕТЕ</h2>
                         <div class="post__info">
@@ -92,7 +89,7 @@
                     <img src="images/last-post2.jpg" alt="Йога" class="post__img">
                     <div class="post__content">
                         <div class="post__meta">
-                            <span class="post__category">HEALTH / LIFESTYLE</span>
+                            <ul class="tags"><li class="tags__item"><a href="#" class="tags__link">Health</a></li><li class="tags__item"><a href="#" class="tags__link">Lifestyle</a></li></ul>
                         </div>
                         <h2 class="post__title">ЙОГА ДЛЯ НАЧИНАЮЩИХ В ДОМАШНИХ УСЛОВИЯХ</h2>
                         <div class="post__info">
@@ -107,7 +104,7 @@
                     <img src="images/last-post3.jpg" alt="Фестиваль" class="post__img">
                     <div class="post__content">
                         <div class="post__meta">
-                            <span class="post__category">MUSIC</span>
+                            <ul class="tags"><li class="tags__item"><a href="#" class="tags__link">Music</a></li></ul>
                         </div>
                         <h2 class="post__title">ЛУЧШИЕ МУЗЫКАЛЬНЫЕ ФЕСТИВАЛИ ЭТОГО ЛЕТА</h2>
                         <div class="post__info">
@@ -122,7 +119,7 @@
                     <img src="images/last-post4.jpg" alt="Кулинария" class="post__img">
                     <div class="post__content">
                         <div class="post__meta">
-                            <span class="post__category">LYFESTYLE / FOOD</span>
+                            <ul class="tags"><li class="tags__item"><a href="#" class="tags__link">Lyfestyle</a></li><li class="tags__item"><a href="#" class="tags__link">Food</a></li></ul>
                         </div>
                         <h2 class="post__title">НАУЧНЫЙ ПОДХОД К КУЛИНАРИИ</h2>
                         <div class="post__info">
@@ -137,7 +134,7 @@
                     <img src="images/last-post5.jpg" alt="Подушка" class="post__img">
                     <div class="post__content">
                         <div class="post__meta">
-                            <span class="post__category">LIFESTYLE / INTERIOR / ART</span>
+                            <ul class="tags"><li class="tags__item"><a href="#" class="tags__link">Lifestyle</a></li><li class="tags__item"><a href="#" class="tags__link">Interior</a></li><li class="tags__item"><a href="#" class="tags__link">Art</a></li></ul>
                         </div>
                         <h2 class="post__title">ДЕЛАЕМ МОДНЫЕ ПРИНТЫ НА ПОДУШКАХ ДЛЯ ИНТЕРЬЕРА</h2>
                         <div class="post__info">
@@ -148,7 +145,7 @@
                     </div>
                 </article>
             </div>
-        </main>
+        </div>
 
         <aside class="sidebar">
 
@@ -289,6 +286,7 @@
             </div>
         </div>
     </section>
+</main>
 
     <footer class="footer">
         <div class="footer__container">
