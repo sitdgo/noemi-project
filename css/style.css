@@ -636,6 +636,15 @@ ul {
 
 /* АДАПТИВНОСТЬ (Desktop: >= 1200px) */
 @media (min-width: 1200px) {
+
+    .header {
+        position: relative;
+        background-color: var(--bg-main);
+    }
+    .logo {
+        color: var(--text-main);
+    }
+
     .header__container,
     .hero__container,
     .trending__container,
@@ -760,6 +769,12 @@ ul {
     gap: 5px;
     margin-bottom: 5px;
 }
+.tags__item:not(:last-child)::after {
+    content: "/";
+    font-size: 12px;
+    color: var(--text-light);
+    margin: 0 2px;
+}
 .tags__link {
     text-transform: uppercase;
     font-size: 12px;
@@ -767,13 +782,25 @@ ul {
     font-weight: 700;
 }
 
-/* Hover/Focus Effects */
+
+/* COMPREHENSIVE HOVER/FOCUS EFFECTS */
+a { transition: color 0.3s; }
+.button { transition: background-color 0.3s; }
+.search-form__button { transition: background-color 0.3s; }
+.social__link { transition: opacity 0.3s; }
+.menu-toggle { transition: opacity 0.3s; }
+
 a:hover, a:focus {
     color: var(--text-light);
     outline: none;
 }
-.button:focus {
+.button:hover, .button:focus, .search-form__button:hover, .search-form__button:focus {
     background-color: #333;
+    outline: none;
+    cursor: pointer;
+}
+.social__link:hover, .social__link:focus, .menu-toggle:hover, .menu-toggle:focus {
+    opacity: 0.7;
     outline: none;
 }
 .search-form__input:focus, .subscribe-form__input:focus, .feedback-form__select:focus, .feedback-form__textarea:focus {
