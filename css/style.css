@@ -115,9 +115,14 @@ ul {
 
 /* Шапка (Header) */
 .header {
-    background-color: var(--bg-main);
+    background-color: transparent;
     padding: 15px 20px;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-sizing: border-box;
 }
 
 .header__container {
@@ -181,7 +186,7 @@ ul {
     background-color: #333;
     background-size: cover;
     background-position: center;
-    padding: 100px 20px;
+    padding: 120px 20px 60px;
     text-align: center;
     color: #fff;
     position: relative;
@@ -384,15 +389,13 @@ ul {
     background-color: var(--bg-light);
 }
 
-.search-form__button {
-    width: 40px;
-    background-color: var(--text-light);
-    border: none;
-    cursor: pointer;
-    /* Иконка лупы (можно через background-image) */
 
-    text-transform: uppercase;
+.search-form__button {
+    background-image: url('data:image/svg+xml;utf8,<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.707 13.293L11.414 10C12.402 8.647 13 6.945 13 5.111C13 2.293 10.707 0 7.889 0C5.071 0 2.778 2.293 2.778 5.111C2.778 7.929 5.071 10.222 7.889 10.222C9.723 10.222 11.425 9.624 12.778 8.636L16.071 11.929C16.462 12.319 17.094 12.319 17.485 11.929C17.876 11.538 17.876 10.906 17.485 10.515L14.707 13.293ZM7.889 8.222C6.174 8.222 4.778 6.826 4.778 5.111C4.778 3.396 6.174 2 7.889 2C9.604 2 11 3.396 11 5.111C11 6.826 9.604 8.222 7.889 8.222Z" fill="white"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
 
 .subscribe-form {
     display: flex;
@@ -759,7 +762,7 @@ ul {
     }
     
     .hero {
-        padding: 50px 20px;
+        padding: 80px 20px 30px;
     }
 }
 .tags {
@@ -784,7 +787,13 @@ ul {
 /* ??????? ??? ????????? */
 a { transition: color 0.3s; }
 .button { transition: background-color 0.3s; }
-.search-form__button { transition: background-color 0.3s; }
+
+.search-form__button {
+    background-image: url('data:image/svg+xml;utf8,<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.707 13.293L11.414 10C12.402 8.647 13 6.945 13 5.111C13 2.293 10.707 0 7.889 0C5.071 0 2.778 2.293 2.778 5.111C2.778 7.929 5.071 10.222 7.889 10.222C9.723 10.222 11.425 9.624 12.778 8.636L16.071 11.929C16.462 12.319 17.094 12.319 17.485 11.929C17.876 11.538 17.876 10.906 17.485 10.515L14.707 13.293ZM7.889 8.222C6.174 8.222 4.778 6.826 4.778 5.111C4.778 3.396 6.174 2 7.889 2C9.604 2 11 3.396 11 5.111C11 6.826 9.604 8.222 7.889 8.222Z" fill="white"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .social__link { transition: opacity 0.3s; }
 .menu-toggle { transition: opacity 0.3s; }
 
@@ -807,4 +816,22 @@ a:hover, a:focus {
 }
 .trending-card:hover .trending-card__content {
     background-color: rgba(0,0,0,0.8);
+}
+
+
+.nav__link,
+.hero__title,
+.section-title,
+.widget__title,
+.post__title,
+.recent-posts__title,
+.post__date,
+.recent-posts__date,
+.post__author,
+.tags-list__link,
+.shop-card__title,
+.button,
+.popup__title,
+.logo {
+    text-transform: uppercase;
 }
