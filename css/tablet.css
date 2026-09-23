@@ -1,0 +1,191 @@
+:root {
+  --container-padding: 35px;
+}
+
+.container {
+  padding-right: 27px;
+}
+
+/* header */
+
+.header {
+  background-image: url(../images/banner-bg-tablet.jpg);
+  min-height: 392px;
+  margin-bottom: 42px;
+}
+
+.header-logo-image {
+  height: 80px;
+  width: 158px;
+}
+
+.top-panel {
+  margin-top: 22px;
+}
+
+.nav-btn {
+  display: block;
+  color: var(--color-light);
+  background: transparent;
+  border: none;
+  font-size: 2.7rem;
+  padding-inline: 0;
+}
+
+.header-menu-list {
+  display: none;
+}
+
+.connect:hover .header-menu-list {
+  display: block;
+  position: absolute;
+  right: 30px;
+  background-color: var(--color-light);
+  padding-inline: 15px;
+  text-align: center;
+  top: 80px;
+}
+
+.header-menu-link {
+  color: var(--color-dark-alternative);
+  font-weight: 700;
+}
+
+.header-menu-link:hover {
+  color: #b59f5b;
+  text-decoration: none;
+}
+
+.header-title {
+  font-size: 4rem;
+  line-height: 55px;
+  margin-top: 68px;
+  max-width: 630px;
+}
+
+/* section trends */
+
+.trends {
+  margin-bottom: 48px;
+}
+
+.title-section {
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.trends-title {
+  margin-bottom: 15px;
+}
+
+.post-trends {
+  width: calc((100% - 5px) / 2);
+  min-height: 247px;
+}
+
+.trend-subtitle-link {
+  font-size: 1.7rem;
+  line-height: 22px;
+}
+
+.categories-list {
+  margin-bottom: 0;
+}
+
+/* main */
+
+.main {
+  max-width: 57%;
+  margin-bottom: 44px;
+}
+
+.posts {
+  row-gap: 50px;
+}
+
+.post {
+  flex-wrap: wrap;
+  row-gap: 13px;
+}
+
+.post:nth-child(n+2)::before {
+  content: '';
+  position: absolute;
+  top: -44px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #eeeeee;
+}
+
+.post-preview {
+  width: 100%;
+}
+
+.post-info > p {
+  margin-bottom: 10px;
+}
+
+.post-subtitle {
+  margin-top: 4px;
+}
+
+.post-subtitle-link {
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.post-header {
+  margin-top: 19px;
+  margin-bottom: 15px;
+}
+
+/* aside - sidebar */
+
+.sidebar-subtitle {
+  font-size: 14px;
+  line-height: 12px;
+}
+
+.sidebar-posts {
+  gap: 22px;
+}
+
+.sidebar-post {
+  gap: 19px;
+}
+
+/* shop */
+
+.shop {
+  margin-bottom: 44px;
+}
+
+.shop-title {
+  margin-bottom: 13px;
+}
+
+.shop-body {
+  row-gap: 20px;
+}
+
+.shop-item {
+  width: 48%;
+}
+
+.img-item {
+  max-width: 293px;
+  min-width: auto;
+  min-height: 227px;
+}
+
+/* footer */
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin-top: 31px;
+  margin-bottom: 35px;
+  padding-inline: 15px;
+}
